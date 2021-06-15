@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bill's PC</title>
+</head>
+<body>
+    <nav class="navbar is-dark has-shadow">
+        <!-- logo/brand -->
+        <div class="navbar-brand">
+            <a href="index.html" class="navbar-item">
+                <img src="./images/pokeball.png" alt="logo" style="max-height: 50px" class="py-2 px-2">
+                Bill's PC
+            </a>
+        </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="./pokemon.html" class="navbar-item">My Pokemon</a>
+            </div>
+        </div>
+    </nav>
+    <div class="section is-small">
+        <div class="columns">
+            <div class="column is-one-fifth"></div>
+            <div class="column">
+            <div class="field">
+                <div class="control is-large is-flex flex-direction-row ui-widget">
+                  <input class="input is-large m-2" type="text" placeholder="Choose your Pokemon" id="pokeSearch">
+                  <button class="button is-large m-2" id="choosebtn">Choose</button>
+                  <input type="submit" class="button is-large m-2" id="searchbtn"></input>
+                </div>
+            </div>
+            </div>
+            <div class="column is-one-fifth"></div>
+        </div>
+        </div>
+    </div>
+    <div class="section is-medium">
+        <div class="columns">
+        <div class="column is-two-fifths"></div>
+        <div class="column has-text-centered">
+                <h3 id="pokename"></h3>
+                <img id="pokeImg"/>
+        </div>
+        <div class="column is-two-fifths"></div>
+    </div>
+    </div>
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="./js/choose.js"></script>
+</body>
+</html>
